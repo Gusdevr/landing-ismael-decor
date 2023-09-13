@@ -92,8 +92,6 @@ const Home = () => {
 
         </div>
 
-  
-
 
 
         
@@ -113,6 +111,7 @@ const Home = () => {
 
 
       <Footer />
+
 
     </ContainerHome>
   )

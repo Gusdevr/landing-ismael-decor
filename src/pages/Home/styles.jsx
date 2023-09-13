@@ -4,7 +4,6 @@ export const ContainerHome = styled.div`
 
 
 
-
 `;
 
 export const SectionHeader = styled.section`

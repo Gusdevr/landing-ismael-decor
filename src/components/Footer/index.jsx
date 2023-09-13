@@ -9,23 +9,7 @@ const Footer = () => {
   return (
     <ContainerFooter>
 
-      <div className='sec-cort'>
-
-<h3>Nossas Cortinas</h3>
-<a href="persianarolo">Cortina Rolô</a>
-<a href="cortinatrilho">Cortina com Trilho</a>
-<a href="cortinavarao">Cortina com Varão</a>
-<a href="cortinatrilho">Cortina Tecido</a>
-</div>
-
-<div className='sec-persi'>
-
-<h3>Nossas Persianas</h3>
-<a href="persianarolo">Persiana Rolô</a>
-<a href="persianaromana">Persiana Romana</a>
-<a href="persianaaluminio">Persiana de Aluminio</a>
-<a href="persianamadeira">Persiana de Madeira</a>
-</div>
+     
 
 <div className='sec-contact'>
 

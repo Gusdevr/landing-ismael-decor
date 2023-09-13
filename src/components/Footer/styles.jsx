@@ -15,13 +15,23 @@ margin-top: 800px;
 
 
 @media screen and (max-width: 768px){
-  
+
   width: 100%;
   flex-direction: column;
-  margin-top: 300px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
+  .social-link {
+    display: flex;
+   flex-direction: column;
+   margin-bottom: 50px;
+  }
 
 }
+
+
 
 
 a {
@@ -45,6 +55,7 @@ p {
   display: none;
   width: 100%;
   flex-direction: column;
+
 
 
 }
@@ -114,6 +125,7 @@ p {
 @media screen and (max-width: 768px){
   
   width: 100%;
+  
 
 .sec-copy {
     position: absolute;
