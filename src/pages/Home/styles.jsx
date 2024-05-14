@@ -18,7 +18,8 @@ export const SectionHeader = styled.section`
 export const SectionProduct = styled.section`
   display: flex;
   width: 100vw;
-  background-color: #2c363f;
+  /* background-color: #2c363f; */
+  background-color: #7a0d25;
   margin-top: -10px;
   padding-bottom: 80px;
   justify-content: space-around;
@@ -60,14 +61,15 @@ export const SectionProduct = styled.section`
       font-size: 20px;
       border: solid transparent black;
       height: 35px;
-      background-color: #20231f;
+      /* background-color: #20231f; */
       padding-top: 6px;
       border-radius: 5px;
       cursor: pointer;
 
       :hover {
-        border: solid 1px #fff;
-        border-color: #fff;
+        /* border: solid 1px #fff; */
+        /* border-color: #fff; */
+          
         background-color: transparent;
         transition: 600ms;
       }
@@ -96,9 +98,24 @@ export const SectionAbout = styled.section`
 
 
 
+
   .about-galery { 
-    width: 100vw;
-    height: 600px;
+    /* width: 100vw; */
+    /* height: 600px; */
+    padding: 30px;
+    margin-left: 100px;
+
+    @media screen and (max-width: 768px) {
+     
+     margin-left: -40px;
+    
+    }
+   
+  }
+
+  img {
+    width: 500px;
+    
   }
 
   .container-about {
@@ -160,7 +177,8 @@ export const SectionAbout = styled.section`
 
 
   .about-us {
-    background-color: #2c363f;
+    /* background-color: #2c363f; */
+    background-color: #7a0d25;
     height: 500px;
     display: flex;
     justify-content: center;

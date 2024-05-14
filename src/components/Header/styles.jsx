@@ -9,7 +9,7 @@ export const ContainerHeader = styled.header`
   height: 7rem;
   padding: 0.625rem;
   background-color: transparent;
-  color: #fff;
+  color: black;
   transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 1000;
 
@@ -32,7 +32,8 @@ export const ContainerHeader = styled.header`
     right: 72.8%;
     top: -3%;
     list-style: none;
-    background-color: #2c363fd3;
+    /* background-color: #2c363fd3; */
+    background-color: #fff;
     border: none;
     border-radius: 5px;
     width: 300px;
@@ -51,7 +52,8 @@ export const ContainerHeader = styled.header`
   
 
   &.scrolled {
-    background-color:#52414cce;
+    /* background-color:#52414cce; */
+    background-color: #fff;
     transform: scale(1.02); 
     
 
@@ -104,8 +106,9 @@ export const ContainerHeader = styled.header`
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: #7a0d25;
     display: block;
+    font-size: 20px;
   }
 
 
@@ -136,6 +139,7 @@ export const ContainerHeader = styled.header`
 @media (max-width: 768px) { 
   .menu-responsi {
     display: block; 
+   
   }
 }
 

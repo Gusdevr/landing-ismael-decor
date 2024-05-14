@@ -111,7 +111,7 @@ p {
 
 .sec-copy {
     display: flex;
-    margin-top: 270px;
+    margin-top: 300px;
     /* top: 355px; */
     color: #20231f; 
     /* /* /* background-color: #20231f;

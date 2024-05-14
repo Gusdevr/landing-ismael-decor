@@ -57,6 +57,11 @@ const Header = () => {
           <a href="/">
             <li>HOME</li>
           </a>
+
+          <a href="/">
+            <li>QUEM SOMOS</li>
+          </a>
+       
        
           {/* <a href="link">
             {' '}

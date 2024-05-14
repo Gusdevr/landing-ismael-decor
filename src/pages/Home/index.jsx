@@ -23,6 +23,10 @@ import PersianaArticle from '../../assets/img/ImagesArticles/persi.png'
 import ServicoArticle from '../../assets/img/ImagesArticles/serv.png'
 import AboutJpg from '../../assets/img/cortinacc.jpg'
 
+import Service1 from '../../assets/img/novas/slide1.jpg'
+import Service2 from '../../assets/img/novas/slide2.jpg'
+import Service3 from '../../assets/img/novas/slide3.jpg'
+import Service4 from '../../assets/img/novas/slide4.jpg'
 
 
 
@@ -74,7 +78,10 @@ const Home = () => {
       <SectionAbout>
 
     
-        <img className='about-galery' src={ AboutJpg } alt="" />
+       
+        <img className='about-galery' src={ Service2 } alt="" />
+        <img className='about-galery' src={ Service3 } alt="" />
+        <img className='about-galery' src={ Service4 } alt="" />
 
 
 
