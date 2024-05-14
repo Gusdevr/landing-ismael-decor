@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const WhatsContainer = styled.div `
+
+
   position: fixed;
   bottom: 20px; 
-  right: 20px; 
+  right: 50px; 
   z-index: 9999;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -13,10 +15,12 @@ export const WhatsContainer = styled.div `
     transform: translateX(0);
   }
   10%, 10%, 20%, 10%, 50% {
-    transform: translateX(-5px); /* Defina a quantidade de chacoalhar */
+    transform: translateX(-5px); 
   }
   20%, 15%, 10%, 50% {
-    transform: translateX(5px); /* Defina a quantidade de chacoalhar */
+    transform: translateX(5px); 
   }
+
+ 
 }
 `

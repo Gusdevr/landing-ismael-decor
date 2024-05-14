@@ -1,5 +1,5 @@
-import React from 'react';
-import { WhatsContainer } from './styles';
+import React from 'react'
+import { WhatsContainer } from './styles'
 import WhatsPng from '../../assets/icons/whatsappicon.png'
 
 const WhatsAppButton = () => {
@@ -14,7 +14,9 @@ const WhatsAppButton = () => {
       <img
         src={ WhatsPng }
         alt="WhatsApp"
-        width="80"
+        width="90"
+      
+       
       />
     </a>
     </WhatsContainer>
