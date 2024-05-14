@@ -5,7 +5,7 @@ export const WhatsContainer = styled.div `
 
   position: fixed;
   bottom: 20px; 
-  right: 50px; 
+  right: 40px; 
   z-index: 9999;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
