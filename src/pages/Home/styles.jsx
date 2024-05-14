@@ -103,18 +103,19 @@ export const SectionAbout = styled.section`
     /* width: 100vw; */
     /* height: 600px; */
     padding: 30px;
-    margin-left: 100px;
+    margin-left: 160px;
 
     @media screen and (max-width: 768px) {
      
-     margin-left: -40px;
+     margin-left: 22px;
+      max-width: 350px;
     
     }
    
   }
 
   img {
-    width: 500px;
+    width: 400px;
     
   }
 
