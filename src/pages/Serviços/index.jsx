@@ -1,9 +1,9 @@
 import React from 'react';
 import { ContainerServ, ContainerCarrou } from './styles';
-import { ContainerUs, StyledFooter } from '../QuemSomos/styles';
+import { ContainerUs } from '../QuemSomos/styles';
 import Header from '../../components/Header';
-import HeaderUsPng from '../../assets/img/cortinaedit.jpg';
-import Footer from '../../components/Footer';
+// import HeaderUsPng from '../../assets/img/cortinaedit.jpg';
+// import Footer from '../../components/Footer';
 import WhatsAppButton from '../../components/Whatsap';
 import cort1 from '../../assets/img/news/cortinas.png';
 import cort2 from '../../assets/img/news/janela.png';

@@ -16,7 +16,7 @@ const QuemSomos = () => {
         <Header />
 
         <div className='wall-header'>
-        <img src={HeaderUsPng} alt="" />
+        <img src={HeaderUsPng} alt="heder" />
         </div>
 
         <WhatsAppButton />
@@ -76,9 +76,9 @@ const QuemSomos = () => {
         </div>
       
 
-        <footer>
+        {/* <footer>
           
-        </footer>
+        </footer> */}
      
     </ContainerUs>
 
