@@ -1,82 +1,65 @@
-import React from 'react'
-import { 
-  ContainerUs, 
-  StyledFooter 
-} from '../QuemSomos/styles'
-import Header from '../../components/Header'
-import HeaderUsPng from '../../assets/img/cortinaedit.jpg'
-import RoomPng from '../../assets/img/service.png'
-import Footer from '../../components/Footer'
-import WhatsAppButton from '../../components/Whatsap'
+import React from 'react';
+import { ContainerServ, ContainerCarrou } from './styles';
+import { ContainerUs, StyledFooter } from '../QuemSomos/styles';
+import Header from '../../components/Header';
+import HeaderUsPng from '../../assets/img/cortinaedit.jpg';
+import Footer from '../../components/Footer';
+import WhatsAppButton from '../../components/Whatsap';
+import cort1 from '../../assets/img/news/cortinas.png';
+import cort2 from '../../assets/img/news/janela.png';
+import cort3 from '../../assets/img/news/persiana.png';
+import cort4 from '../../assets/img/news/cortina.png';
 
 const Servicos = () => {
   return (
     <ContainerUs>
-        <Header />
+      <Header />
+      {/* <div className='wall-header'>
+        <img   src={HeaderUsPng} alt="" />
+      </div> */}
+      <WhatsAppButton />
+     
+      <ContainerServ>
+      
+        <div className='card-services'>
+        <h2>Nossos Serviços</h2>
+          <div className='card-tour'>
+            <h3>Pé direito duplo</h3>
+            <img width={'140px'} src={ cort1 } alt="" />
+            <p>Consulte nossos serviços de instalação.</p>
+          </div>
 
-        <div className='wall-header'>
-        <img src={HeaderUsPng} alt="" />
+          <div className='card-trans'>
+            <h3>Instalação</h3>
+            <img style={{marginTop: '20px'}} src={ cort3 } alt="" />
+            <p>Instalação de cortinas e persianas.</p>
+          </div>
+
+          <div className='card-host'>
+            <h3>Manutenção</h3>
+            <img style={{marginTop: '20px'}}  src={ cort2 } alt="" />
+            <p>Consulte nossos serviços de manutenção.</p>
+          </div>
+
+          <div className='card-pack'>
+            <h3>Limpeza</h3>
+            <img style={{marginTop: '20px', }}  width={'140px'}  src={ cort4 } alt="" />
+            <p>Oferecemos serviços de lavagem.</p>
+          </div>
+
+         
         </div>
 
-        <WhatsAppButton />
-
-        <div className='about-us'>
-        <h1>Limpeza, Manutenção e Hipermeabilização</h1>
-        <img src={RoomPng} alt="" />
-
-        <h2>Com sistema de controle de iluminosidade rápido</h2>
-        <h3>Limpeza profunda e eficiente com preservação da integridade <br />
-            do material proporcionamos econômia de tempo e esforço, <br />
-            trazendo saúde, higiene com foco em manuteção preventiva. <br />
-            Na hipermeabilização, você tem seu sofá como novo e por mais tempo, <br />
-            Oferecemos serviços que contam com acessibilidade e produtos especiais</h3> <br />
-
-        </div>
-
-
-        <div className='card'>
-
-
-        <div className='product-us'>
-          <h5>Cortinas e Persianas</h5>
-          <p>Com matéria-prima de qualidade e mão de obra especializada <br />
-            montamos e desenvolvemos cortinas e persianas sob medida, <br />
-            que encaixam perfeitamente no local. Além disso, contamos <br />
-            com uma infinidade de tecidos em diversas texturas e cores <br />
-            e composições, instalamos para você com preço acessível</p>
-
-        </div>
-
-        <div className='main-us'>
-          <h5>Limpeza e Hipermeabilização</h5>
-          <p>
-            Limpeza profunda e eficiente com preservação da integridade <br />
-            do material proporcionamos econômia de tempo e esforço, <br />
-            trazendo saúde, higiene com foco em manuteção preventiva. <br />
-            Na hipermeabilização, você tem seu sofá como novo e por mais tempo, <br />
-            Oferecemos serviços que contam com acessibilidade e produtos especiais. <br />
-          </p>
-        </div>
-
-        </div>
-
-        <div className='c-footer'>
-          <h1>Solicite orçamento com um de nossos <br/> 
-          consultores</h1>
-          <a target='blank' href="https://api.whatsapp.com/send?phone=31973277633&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os">
-            <button>Solicitar Agora</button></a>
-
-         <div className='wall-footer'></div>
-        </div>
-
-    <StyledFooter marginTop={100}>
-    <Footer />
-    </StyledFooter>
- 
+        {/* Container do Carrossel */}
+        <ContainerCarrou>
+          {/* Conteúdo do Carrossel */}
+        </ContainerCarrou>
+      </ContainerServ>
+      {/* <StyledFooter marginTop={100}>
+        <Footer />
+      </StyledFooter> */}
     </ContainerUs>
-    
-    
-  )
+  );
 }
 
-export default Servicos
+export default Servicos;

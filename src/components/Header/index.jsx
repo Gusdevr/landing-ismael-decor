@@ -1,186 +1,98 @@
-import React, { useState, useEffect } from 'react'
-import { ContainerHeader } from './styles'
-import ismaelPng from '../../assets/img/ismaellogis.png'
-import { FaChevronDown, FaTimes } from 'react-icons/fa'
-import { CgMenuGridR } from 'react-icons/cg'
-import { FaInstagram, FaFacebook  } from "react-icons/fa"
-
+import React, { useState, useEffect } from 'react';
+import { ContainerHeader } from './styles';
+import ismaelPng from '../../assets/img/ismaellogis.png';
+import { FaTimes, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { CgMenuGridR } from 'react-icons/cg';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false)
-  const [cortinasDropdown, setCortinasDropdown] = useState(false)
-  const [persianasDropdown, setPersianasDropdown] = useState(false)
-  const [isMenuGridROpen, setIsMenuGridROpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false);
+  const [isMenuGridROpen, setIsMenuGridROpen] = useState(false);
 
   const toggleMenuGridR = () => {
-    setIsMenuGridROpen(!isMenuGridROpen)
-    setIsAnyDropdownOpen(false)
-    closeAllDropdowns()
-  }
-
-  const toggleCortinasDropdown = () => {
-    setCortinasDropdown(!cortinasDropdown)
-  }
-
-  const togglePersianasDropdown = () => {
-    setPersianasDropdown(!persianasDropdown)
-  }
-
-  const closeAllDropdowns = () => {
-    setCortinasDropdown(false)
-    setPersianasDropdown(false)
-  }
+    setIsMenuGridROpen(!isMenuGridROpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setScrolled(true)
+        setScrolled(true);
       } else {
-        setScrolled(false)
+        setScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <ContainerHeader className={scrolled ? 'scrolled' : ''}>
-      <a href="/">
-        <img width={'180px'} src={ismaelPng} alt="IsmaelDecor" />
-      </a>
+      <div className="logo-menu-container">
+        <a href="/">
+          <img src={ismaelPng} alt="IsmaelDecor" />
+        </a>
+        <div className="menu-responsi">
+          {isMenuGridROpen ? (
+            <FaTimes
+              className="menu-grid close-icon"
+              size={'32px'}
+              onClick={toggleMenuGridR}
+            />
+          ) : (
+            <CgMenuGridR
+              className="menu-grid"
+              size={'32px'}
+              onClick={toggleMenuGridR}
+            />
+          )}
+        </div>
+      </div>
       <nav>
         <ul>
           <a href="/">
             <li>HOME</li>
           </a>
-
-          <a href="/">
+          <a href="/quemsomos">
             <li>QUEM SOMOS</li>
           </a>
-       
-       
-          {/* <a href="link">
-            {' '}
-            <li>QUEM SOMOS</li>{' '}
-          </a> */}
-          {/* <li onClick={toggleCortinasDropdown}>
-            NOSSAS CORTINAS{' '}
-            <FaChevronDown size={'10px'} className="dropdown-arrow" />
-          </li> */}
-          {cortinasDropdown && (
-            <ul className="dropdown">
-              {/* <a href="cortinatrilho">
-                <li>Trilho</li>
-              </a> */}
-              {/* <a href="cortinavarao">
-                <li>Varão</li>
-              </a> */}
-              {/* <a href="persianaromana">
-                <li>Romana</li>
-              </a> */}
-            </ul>
-          )}
-          {/* <li onClick={togglePersianasDropdown}>
-            NOSSAS PERSIANAS{' '}
-            <FaChevronDown size={'10px'} className="dropdown-arrow" />
-          </li> */}
-          {persianasDropdown && (
-            <ul className="dropdown-b">
-              {/* <a href="persianaaluminio">
-                <li>Alumínio</li>
-              </a> */}
-              {/* <a href="persianamadeira">
-                <li>Madeira</li>
-              </a> */}
-              {/* <a href="persianarolo">
-                <li>Rolô</li>
-              </a> */}
-            </ul>
-          )}
-
-          {/* <a href="servicos">
-            <li>SERVIÇOS</li>
-          </a> */}
-        
-         <a href="https://api.whatsapp.com/send?phone=31973277633&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os"> <li>ENTRE EM CONTATO</li> </a>
-         <a href="">
+          <a target="blank" href="https://api.whatsapp.com/send?phone=31973277633&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os">
+            <li>CONTATO</li>
+          </a>
+          <a href="servicos">
+              <li>SERVIÇOS</li>
+            </a>
+          <a target="blank" href="https://www.facebook.com/ismaeldeccor">
             <FaFacebook />
           </a>
-          <a href="">
+          <a target="blank" href="https://www.instagram.com/ismaeldeccor/">
             <FaInstagram />
           </a>
         </ul>
-
-
-        
       </nav>
 
-      <div className="menu-responsi">
-        {isMenuGridROpen ? (
-          <FaTimes
-            className="menu-grid"
-            size={'52px'}
-            style={{
-              bottom: '35%',
-              right: '68%',
-              cursor: 'pointer',
-              position: 'absolute',
-              color: '#7a0d25',
-            }}
-            onClick={toggleMenuGridR}
-          />
-        ) : (
-          <CgMenuGridR
-            className="menu-grid"
-            size={'52px'}
-            style={{
-              bottom: '35%',
-              right: '75%',
-              cursor: 'pointer',
-              position: 'absolute',
-              color: '#7a0d25',
-            }}
-            onClick={toggleMenuGridR}
-          />
-        )}
-        {isMenuGridROpen && (
+      {isMenuGridROpen && (
+        <div className="dropdown-responsi-container">
           <ul className="dropdown-responsi">
             <a href="/">
               <li>Home</li>
             </a>
-            {/* <a href="quemsomos">
+            <a href="/quemsomos">
               <li>Quem Somos</li>
-            </a> */}
-            {/* <a href="cortinatrilho">
-              <li>Cortina Trilho</li>
-            </a> */}
-            {/* <a href="cortinatrilho">
-              <li>Cortina Varão</li>
-            </a> */}
-            {/* <a href="persianaaluminio">
-              <li>Persiana Alumínio</li>
-            </a> */}
-            {/* <a href="persianaaluminio">
-              <li>Persiana Madeira</li>
-            </a> */}
-            {/* <a href="persianaaluminio">
-              <li>Persiana Rolô</li>
-            </a> */}
-            {/* <a href="servicos">
+            </a>
+            <a href="servicos">
               <li>Serviços</li>
-            </a> */}
+            </a>
             <a href="https://api.whatsapp.com/send?phone=31973277633&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os">
               <li>Contato</li>
             </a>
           </ul>
-        )}
-      </div>
+        </div>
+      )}
     </ContainerHeader>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -4,10 +4,14 @@ import 'react-awesome-slider/dist/styles.css'
 import  { StyledAwesomeSlider } from './styles'
 
 
-import SliderTwoPng from '../../assets/img/Galery/capturaA.png'
-import SliderTreePng from '../../assets/img/Galery/capturaB.png'
-import SliderFourPng from '../../assets/img/Galery/capturaC.png'
-import SliderFivePng from '../../assets/img/Galery/capturaD.png'
+import SliderTwoPng from '../../assets/img/novos2024/capturaB.jpg'
+import SliderTreePng from '../../assets/img/novos2024/new1.jpg'
+import SliderFourPng from '../../assets/img/novos2024/new2.jpg'
+import SliderFivePng from '../../assets/img/novos2024/new3.jpg'
+import SliderSixPng from '../../assets/img/novos2024/new4.jpg'
+import SliderSevenPng from '../../assets/img/novos2024/new5.jpg'
+import SliderEightPng from '../../assets/img/novos2024/new6.jpg'
+import SliderNinePng from '../../assets/img/novos2024/new7.jpg'
 
 
 
@@ -29,6 +33,18 @@ const SliderGalery = () => {
       </div>
       <div>
         <img src={SliderFivePng } alt="Image 3" />
+      </div>
+      <div>
+        <img src={SliderSixPng } alt="Image 3" />
+      </div>
+      <div>
+        <img src={SliderSevenPng } alt="Image 3" />
+      </div>
+      <div>
+        <img src={SliderEightPng } alt="Image 3" />
+      </div>
+      <div>
+        <img src={SliderNinePng } alt="Image 3" />
       </div>
      
       

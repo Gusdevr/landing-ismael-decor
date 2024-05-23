@@ -66,7 +66,7 @@ const Home = () => {
 
         <article className='art-service'>
           <img  src={ServicoArticle} alt="" />
-          <a href="https://www.instagram.com/ismaeldeccor/"  target='blank'><h3>Nossos Serviços</h3></a>
+          <a href="/servicos"  target='blank'><h3>Nossos Serviços</h3></a>
        
 
         </article>

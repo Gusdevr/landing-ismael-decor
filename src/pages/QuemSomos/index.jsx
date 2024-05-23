@@ -21,21 +21,23 @@ const QuemSomos = () => {
 
         <WhatsAppButton />
 
-        <img className='img-about' src={RoomPng} alt="" />
+       
 
         <div className='about-us'>
       
-   
+    
 
         <h1>Estamos no mercado  há 10 anos</h1>
-        <p>Bem-vindo à Ismael Decor, o seu destino exclusivo <br />
-          para cortinas e persianas personalizadas, onde <br /> 
-          a elegância encontra a funcionalidade.  Desde 2012, <br />
-          temos orgulhosamente atendido a clientes exigentes, <br />
-          vestimos janelas e costuramos sonhos, transformando casas <br />
+        <p>Bem-vindo à Ismael Decor, o seu destino exclusivo 
+          para cortinas e persianas personalizadas, onde
+          a elegância encontra a funcionalidade.  Desde 2012, 
+          temos orgulhosamente atendido a clientes exigentes, 
+          vestimos janelas e costuramos sonhos, transformando casas 
           e espaços comerciais em verdadeiros refúgios de conforto e estilo.</p>
 
         </div>
+
+        <img className='img-about' src={RoomPng} alt="" />
 
 
         {/* <div className='card'>
@@ -65,19 +67,22 @@ const QuemSomos = () => {
         </div> */}
 
         <div className='c-footer'>
-          <h1>Solicite orçamento com um de nossos <br/> 
-          consultores</h1>
-          <a target='blank' href="https://api.whatsapp.com/send?phone=31973277633&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os">
-            <button>Solicitar Agora</button></a>
+          <h2>Solicite orçamento com um de nossos <br/> 
+          consultores</h2>
+          <a className='req-now' target='blank' href="https://api.whatsapp.com/send?phone=31973277633&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os">
+           Solicitar Agora</a>
 
       
         </div>
       
-  
-    <Footer />
 
- 
+        <footer>
+          
+        </footer>
+     
     </ContainerUs>
+
+
     
     
   )

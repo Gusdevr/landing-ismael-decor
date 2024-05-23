@@ -1,11 +1,11 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const ContainerHeader = styled.header`
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 7rem;
   padding: 0.625rem;
   background-color: transparent;
@@ -13,164 +13,135 @@ export const ContainerHeader = styled.header`
   transition: background-color 0.3s ease, transform 0.3s ease;
   z-index: 1000;
 
+  .logo-menu-container {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 180px;
+    }
+
+    .menu-responsi {
+      margin-left: 1rem;
+    }
+  }
+
   .menu-responsi {
     display: none;
-    
-    a {
-      font-size: 22px;
-      line-height: 10px;
-      margin-left: 20px;
-      margin-top: 50px;
-    }
   }
 
-  
+  .menu-grid {
+    cursor: pointer;
+    color: #7a0d25;
+  }
 
+  .close-icon {
+    color: #7a0d25;
+  }
+
+  .dropdown-responsi-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .dropdown-responsi {
-    position: absolute;
-    right: 72.8%;
-    top: -3%;
     list-style: none;
-    /* background-color: #2c363fd3; */
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    width: 300px;
-    height: 810px;
-    z-index: 1000;
-    transition: width 0.5s, background-color 0.5s;
-    transition: transform 0.3s;
-   
-    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
   }
 
+  .dropdown-responsi a {
+    color: #7a0d25;
+    text-decoration: none;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
 
-
-
-
-  
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
 
   &.scrolled {
-    /* background-color:#52414cce; */
     background-color: #fff;
-    transform: scale(1.02); 
-    
+    transform: scale(1.02);
 
-
-    
-    img {
-   
-       
-      transform: scale(1.09); 
-     
-    }
-
-    nav li {
-      transform: scale(1.09); 
+    nav ul li {
+      color: #7a0d25;
     }
   }
 
-  &:hover img {
-    transform: scale(1.03); 
-  }
-  
-  nav ul   {
+  nav ul {
     display: flex;
     list-style: none;
     gap: 35px;
     margin: 0;
     padding: 0;
-    color: #fff;
     font-weight: 700;
     font-size: 16px;
-
-
-   
   }
-  
-  nav li  {
+
+  nav ul a {
+    text-decoration: none;
+    color: #7a0d25;
+  }
+
+  nav ul li {
     cursor: pointer;
     transition: transform 0.3s ease;
 
-    :hover{
-        color: #7a0d25;
-        /* color: #434343dc; */
-        font-size: 18px;
+    &:hover {
+      color: #7a0d25;
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+
+    .menu-responsi {
+      display: block;
+      position: relative;
     }
 
-   
+    nav {
+      display: none;
+    }
   }
 
-  
+  @media (max-width: 480px) {
+    .logo-menu-container {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
 
-  a {
-    text-decoration: none;
-    color: #7a0d25;
-    display: block;
-    font-size: 20px;
+    img {
+      width: 150px;
+    }
+
+    .menu-responsi .menu-grid {
+      position: static;
+      margin: 0;
+    }
+
+    .dropdown-responsi-container {
+      width: 100%;
+    }
   }
-
-
-.dropdown {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  margin-left: 12.5%;
-  top: 80%;
-  gap: 15px;
-}
-
-.dropdown-b {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  margin-left: 23.5%;
-  top: 80%;
-  gap: 15px;
-}
-
-
-@media screen and (max-width: 768px){
-  width: 100%;
-  flex-direction: column;
-}
-
-@media (max-width: 768px) { 
-  .menu-responsi {
-    display: block; 
-   
-  }
-}
-
-@media (max-width: 768px) { 
-  nav {
-    display: none; 
-  }
-}
-
-
-
-@media (max-width: 1099px) {
-  width: 1075px;
-}
-
-@media (max-width: 1099px) {
-  width: 1100px;
-}
-
-@media (max-width: 768px) {
-  img {
-    margin-right: 900px;
-  }
-}
-
-
-
-
-`
-
-
-
-
-
+`;
