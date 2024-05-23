@@ -1,12 +1,12 @@
 import React from 'react'
 import { 
   ContainerUs, 
-  StyledFooter 
+  // StyledFooter 
 } from './styles'
 import Header from '../../components/Header'
 import HeaderUsPng from '../../assets/img/cortinaedit.jpg'
 import RoomPng from '../../assets/img/AboutUs/roomus.png'
-import Footer from '../../components/Footer'
+// import Footer from '../../components/Footer'
 import WhatsAppButton from '../../components/Whatsap'
 
 
