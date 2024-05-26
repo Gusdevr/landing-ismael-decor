@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rcaferati/wac": "^1.0.0",
     "axios": "^1.5.0",
+    "instead": "^1.0.3",
     "leaflet": "^1.9.4",
     "ol": "^7.5.1",
     "react": "^18.2.0",
