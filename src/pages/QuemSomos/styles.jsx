@@ -21,11 +21,16 @@ justify-content: center;
   justify-content: center;
   position: absolute;
   margin-top: 900px;
-  width: 500px;
+  width: 380px;
   border-radius: 8px;
+
+ 
 
 
 }
+
+
+
 
 
 .about-us {
