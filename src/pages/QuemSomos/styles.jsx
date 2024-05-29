@@ -41,8 +41,15 @@ justify-content: center;
 }
 
 h1 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #7a0d25;
+  max-width: 370px;
+  margin-left: 10px;
+}
+
+p {
+  margin-left: 10px;
+  max-width: 370px;
 }
 
 .c-footer {

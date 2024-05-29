@@ -76,6 +76,11 @@ const Header = () => {
 
       {isMenuGridROpen && (
         <div className="dropdown-responsi-container">
+          <FaTimes style={{color: '#7a0d25', position: 'absolute', marginBottom: '400px'}}
+            className="close-dropdown"
+            size={'32px'}
+            onClick={toggleMenuGridR}
+          />
           <ul className="dropdown-responsi">
             <Link to="/">
               <li>Home</li>
