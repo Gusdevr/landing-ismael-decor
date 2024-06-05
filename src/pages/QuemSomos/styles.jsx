@@ -21,11 +21,16 @@ justify-content: center;
   justify-content: center;
   position: absolute;
   margin-top: 900px;
-  width: 500px;
+  width: 380px;
   border-radius: 8px;
+
+ 
 
 
 }
+
+
+
 
 
 .about-us {
@@ -36,8 +41,15 @@ justify-content: center;
 }
 
 h1 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   color: #7a0d25;
+  max-width: 370px;
+  margin-left: 10px;
+}
+
+p {
+  margin-left: 10px;
+  max-width: 370px;
 }
 
 .c-footer {
