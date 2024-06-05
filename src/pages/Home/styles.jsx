@@ -10,6 +10,15 @@ export const SectionHeader = styled.section`
   img {
     width: 100vw;
     height: 800px;
+ 
+  }
+
+  video {
+    width: 100vw;
+    object-fit: cover;
+    height: 800px;
+   
+
   }
 
  

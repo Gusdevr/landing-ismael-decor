@@ -98,6 +98,7 @@ export const ContainerHeader = styled.header`
   nav ul a {
     text-decoration: none;
     color: #7a0d25;
+    
   }
 
   nav ul li {

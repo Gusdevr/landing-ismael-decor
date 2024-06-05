@@ -10,13 +10,16 @@ import RoomPng from '../../assets/img/AboutUs/roomus.png';
 // import Footer from '../../components/Footer';
 import WhatsAppButton from '../../components/Whatsap';
 
+
+import NerwBannerJPG from '../../assets/img/news/novabanner2.jpg'
+
 const QuemSomos = () => {
   return (
     <ContainerUs>
       <Header />
 
       <div className='wall-header'>
-        <img src={HeaderUsPng} alt="heder" />
+        <img src={NerwBannerJPG} alt="heder" />
       </div>
 
       <WhatsAppButton />

@@ -12,7 +12,7 @@ import SliderSixPng from '../../assets/img/novos2024/new4.jpg'
 import SliderSevenPng from '../../assets/img/novos2024/new5.jpg'
 import SliderEightPng from '../../assets/img/novos2024/new6.jpg'
 import SliderNinePng from '../../assets/img/novos2024/new7.jpg'
-
+import PersianaArticleJPG from '../../assets/img/ImagesArticles/persi.png'
 
 
 
@@ -32,19 +32,19 @@ const SliderGalery = () => {
         <img src={SliderFourPng} alt="Image 2" />
       </div>
       <div>
-        <img src={SliderFivePng } alt="Image 3" />
+        <img src={SliderFivePng} alt="Image 3" />
       </div>
       <div>
-        <img src={SliderSixPng } alt="Image 3" />
+        <img src={SliderSixPng} alt="Image 3" />
       </div>
       <div>
-        <img src={SliderSevenPng } alt="Image 3" />
+        <img src={PersianaArticleJPG} alt="Image 3" />
       </div>
       <div>
-        <img src={SliderEightPng } alt="Image 3" />
+        <img src={SliderEightPng} alt="Image 3" />
       </div>
       <div>
-        <img src={SliderNinePng } alt="Image 3" />
+        <img src={SliderNinePng} alt="Image 3" />
       </div>
      
       
