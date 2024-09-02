@@ -32,7 +32,7 @@ import Service4 from "../../assets/img/novas/slide4.jpg";
 import VideoBannerMP4 from "../../assets/media/videobanner.mp4";
 import TwolandPage from "../../assets/img/novos2024-2/twoland.jpg"
 
-import NerwBannerJPG from "../../assets/img/novos2024-2/news2024banner.png";
+import NerwBannerJPG from "../../assets/img/novos2024-2/saladecor.jpg";
 
 
 
