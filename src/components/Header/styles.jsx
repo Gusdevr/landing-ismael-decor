@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContainerHeader = styled.header`
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 7rem;
@@ -16,6 +16,7 @@ export const ContainerHeader = styled.header`
   .logo-menu-container {
     display: flex;
     align-items: center;
+    margin-right: 30px;
 
     img {
       width: 180px;
@@ -98,16 +99,16 @@ export const ContainerHeader = styled.header`
   nav ul a {
     text-decoration: none;
     color: #7a0d25;
-    
   }
 
   nav ul li {
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-bottom 0.3s ease;
 
     &:hover {
       color: #7a0d25;
       font-size: 18px;
+      border-bottom: 2px solid #7a0d25; /* Traço ao passar o mouse */
     }
   }
 

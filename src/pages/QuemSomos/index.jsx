@@ -11,7 +11,7 @@ import RoomPng from '../../assets/img/AboutUs/roomus.png';
 import WhatsAppButton from '../../components/Whatsap';
 
 
-import NerwBannerJPG from '../../assets/img/news/novabanner2.jpg'
+import NerwBannerJPG from '../../assets/img/novos2024-2/saladecor.jpg'
 
 const QuemSomos = () => {
   return (

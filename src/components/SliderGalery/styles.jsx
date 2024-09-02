@@ -2,12 +2,25 @@ import styled from "styled-components"
 import AwesomeSlider from 'react-awesome-slider'
 
 export const StyledAwesomeSlider = styled(AwesomeSlider)`
-  position: relative; /* Alterado para relative */
+  position: relative; 
   width: 100%;
   max-width: 1200px;
   height: 600px;
-  margin: 10px auto; /* Centralizado horizontalmente */
+  margin: 10px auto; 
 
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: transparent; 
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
   
   
   /* @media (max-width: 1499px) {

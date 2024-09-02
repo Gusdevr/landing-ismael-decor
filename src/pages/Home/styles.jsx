@@ -2,11 +2,115 @@ import styled from "styled-components"
 
 export const ContainerHome = styled.div`
 
+.h5-insta {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
 
+  button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7a0d25;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #fff;
+    color: #7a0d25;
+  }
+}
+
+.map-container {
+ 
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+
+  button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #25d366;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #fff;
+    color: #7a0d25;
+  }
+
+  h3 {
+    position: absolute;
+  }
+
+  
+ 
+}
+
+iframe {
+  margin-top: 100px;
+  
+}
 
 `;
 
 export const SectionHeader = styled.section`
+
+  .Front-baner {
+    padding: 20px;
+    h1 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+      line-height: 170%;
+     
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      
+    }
+
+     .btn-land-one {
+      margin-top: 30px;
+      margin-bottom: 10px;
+     }
+
+     button {
+      width: 190px;
+      height: 40px;
+      background-color: #7a0d25;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+     }
+
+     button:hover {
+      background-color: #fff;
+      color: #7a0d25;
+     }
+  }
+
   img {
     width: 100vw;
     height: 800px;

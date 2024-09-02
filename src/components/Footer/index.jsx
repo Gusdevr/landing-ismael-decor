@@ -14,7 +14,7 @@ const Footer = () => {
 <div className='sec-contact'>
 
 <h3>Entre em Contato</h3>
-<p>Rua Flor do Vale, 65 - Tupi,<br /> Belo Horizonte - MG</p>
+<p>R. Rio Grande do Norte, 1436 - Savassi<br /> Belo Horizonte - MG</p>
 <p>(31) 973277633</p>
 <p>persiana2irmãos@gmail.com</p>
 

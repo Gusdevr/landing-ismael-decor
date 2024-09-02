@@ -4,15 +4,15 @@ import 'react-awesome-slider/dist/styles.css'
 import  { StyledAwesomeSlider } from './styles'
 
 
-import SliderTwoPng from '../../assets/img/novos2024/capturaB.jpg'
-import SliderTreePng from '../../assets/img/novos2024/new1.jpg'
-import SliderFourPng from '../../assets/img/novos2024/new2.jpg'
-import SliderFivePng from '../../assets/img/novos2024/new3.jpg'
-import SliderSixPng from '../../assets/img/novos2024/new4.jpg'
+import SliderTwoPng from '../../assets/img/novos2024-2/slide1.jpg'
+import SliderTreePng from '../../assets/img/novos2024-2/slide2.jpg'
+import SliderFourPng from '../../assets/img/novos2024-2/slide3.jpg'
+import SliderFivePng from '../../assets/img/novos2024-2/slide4.jpg'
+import SliderSixPng from '../../assets/img/novos2024-2/slide5.jpg'
 import SliderSevenPng from '../../assets/img/novos2024/new5.jpg'
-import SliderEightPng from '../../assets/img/novos2024/new6.jpg'
-import SliderNinePng from '../../assets/img/novos2024/new7.jpg'
-import PersianaArticleJPG from '../../assets/img/ImagesArticles/persi.png'
+import SliderEightPng from '../../assets/img/novos2024-2/slide6.jpg'
+import SliderNinePng from '../../assets/img/novos2024-2/slide7.jpg'
+import PersianaArticleJPG from '../../assets/img/novos2024-2/slide8.jpg'
 
 
 

@@ -11,7 +11,7 @@ width: 100vw;
 height: 18.75rem;
 color: #fff;
 font-weight: 500;
-margin-top: 800px;
+margin-top: 200px;
 
 
 @media screen and (max-width: 768px){
