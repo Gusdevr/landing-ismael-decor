@@ -1,69 +1,98 @@
-import styled from "styled-components"
+import styled from "styled-components";
+
+// Estilos para o Cookie Banner
+export const CookieBannerContainer = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+`;
+
+export const CookieBannerMessage = styled.p`
+  margin: 0;
+  padding: 0 20px;
+  font-size: 14px;
+  display: inline-block;
+`;
+
+export const CookieAcceptButton = styled.button`
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #555;
+  }
+`;
+
+// Estilos existentes...
 
 export const ContainerHome = styled.div`
+  .h5-insta {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
 
-.h5-insta {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
+    button {
+      width: 150px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      background-color: #7a0d25;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+    }
 
-  button {
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    background-color: #7a0d25;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
+    button:hover {
+      background-color: #fff;
+      color: #7a0d25;
+    }
   }
 
-  button:hover {
-    background-color: #fff;
-    color: #7a0d25;
-  }
-}
+  .map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
 
-.map-container {
- 
-  display: flex;
-  justify-content: center;
-  margin-top: 300px;
+    button {
+      width: 150px;
+      height: 40px;
+      border: none;
+      border-radius: 8px;
+      background-color: #25d366;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+    }
 
-  button {
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    background-color: #25d366;
-    color: #fff;
-    font-weight: 700;
-    cursor: pointer;
-  }
+    button:hover {
+      background-color: #fff;
+      color: #7a0d25;
+    }
 
-  button:hover {
-    background-color: #fff;
-    color: #7a0d25;
+    h3 {
+      position: absolute;
+    }
   }
 
-  h3 {
-    position: absolute;
+  iframe {
+    margin-top: 100px;
   }
-
-  
- 
-}
-
-iframe {
-  margin-top: 100px;
-  
-}
-
 `;
 
 export const SectionHeader = styled.section`
-
   .Front-baner {
     padding: 20px;
     h1 {
@@ -78,22 +107,20 @@ export const SectionHeader = styled.section`
       display: flex;
       justify-content: center;
       line-height: 170%;
-     
     }
 
     a {
       display: flex;
       justify-content: center;
       text-decoration: none;
-      
     }
 
-     .btn-land-one {
+    .btn-land-one {
       margin-top: 30px;
       margin-bottom: 10px;
-     }
+    }
 
-     button {
+    button {
       width: 190px;
       height: 40px;
       background-color: #7a0d25;
@@ -103,35 +130,29 @@ export const SectionHeader = styled.section`
       cursor: pointer;
       font-size: 16px;
       font-weight: 700;
-     }
+    }
 
-     button:hover {
+    button:hover {
       background-color: #fff;
       color: #7a0d25;
-     }
+    }
   }
 
   img {
     width: 100vw;
     height: 800px;
- 
   }
 
   video {
     width: 100vw;
     object-fit: cover;
     height: 800px;
-   
-
   }
-
- 
-`
+`;
 
 export const SectionProduct = styled.section`
   display: flex;
   width: 100vw;
-  /* background-color: #2c363f; */
   background-color: #7a0d25;
   margin-top: -10px;
   padding-bottom: 80px;
@@ -174,62 +195,39 @@ export const SectionProduct = styled.section`
       font-size: 20px;
       border: solid transparent black;
       height: 35px;
-      /* background-color: #20231f; */
       padding-top: 6px;
       border-radius: 5px;
       cursor: pointer;
 
       :hover {
-        /* border: solid 1px #fff; */
-        /* border-color: #fff; */
-          
         background-color: transparent;
         transition: 600ms;
       }
     }
-
-   
   }
 
-  @media screen and (max-width: 768px){
-  
-  width: 100%;
-flex-direction: column;
-h1 {
-  display: none;
-}
-
-
-
-
-}
-
-
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    h1 {
+      display: none;
+    }
+  }
 `;
 
 export const SectionAbout = styled.section`
-
-
-
-
   .about-galery { 
-    /* width: 100vw; */
-    /* height: 600px; */
     padding: 30px;
     margin-left: 160px;
 
     @media screen and (max-width: 768px) {
-     
-     margin-left: 22px;
+      margin-left: 22px;
       max-width: 350px;
-    
     }
-   
   }
 
   img {
     width: 400px;
-    
   }
 
   .container-about {
@@ -237,8 +235,6 @@ export const SectionAbout = styled.section`
     position: absolute;
     margin-top: 750px;
     left: 585px;
-
-    
   }
 
   h1 {
@@ -289,24 +285,17 @@ export const SectionAbout = styled.section`
     }
   }
 
-
   .about-us {
-    /* background-color: #2c363f; */
     background-color: #7a0d25;
     height: 500px;
     display: flex;
     justify-content: center;
-   
-  
 
     .about-title {
       z-index: 1000;
       display: flex;
       justify-content: center;
-
-   
       color: #fff;
- 
 
       h2 {
         font-size: 30px;
@@ -318,45 +307,28 @@ export const SectionAbout = styled.section`
         line-height: 150%;
         max-width: 450px;
         margin-top: 40px;
-      
-     
-
-      
-      
-     
       }
-    
     }
   }
 
-  @media screen and (max-width: 768px){
-  
-  width: 100%;
-  flex-direction: column;
-
-  .about-us {
+  @media screen and (max-width: 768px) {
+    width: 100%;
     flex-direction: column;
 
+    .about-us {
+      flex-direction: column;
+    }
+
+    .about-title {
+      max-width: 380px;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
   }
 
   .about-title {
-    max-width: 380px;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
   }
-
-
-  
-
-
-}
-
-
-.about-title {
-  display: flex;
-  flex-direction: column;
-
-}
- 
-`
+`;

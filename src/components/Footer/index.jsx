@@ -23,6 +23,8 @@ const Footer = () => {
   <FaInstagram className='insta-icon' size={'20px'}/></a>
 <a target='blank' href="https://www.facebook.com/ismaeldeccor">
   <FaFacebook className='face-icon' size={'19px'}/></a>
+
+  <a target='blank' href="politicas">Políticas de Privacidade</a>
 </div>
 
 </div>

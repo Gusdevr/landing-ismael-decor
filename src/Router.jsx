@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import QuemSomos from "./pages/QuemSomos"
+import Politicas from "../src/pages/Politicas"
 // import CortinaTrilho from './pages/CortinaTrilho'
 // import CortinaVarao from './pages/CortinaVarao'
 // import PersianaAluminio from "./pages/PersianaAluminio"
@@ -15,6 +16,7 @@ function Router() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='quemsomos' element={<QuemSomos />} />
+                <Route path='politicas' element={<Politicas />} />
                 {/* <Route path='persianarolo' element={<PersianaRolo />} />
                 <Route path='cortinatrilho' element={<CortinaTrilho />} />
                 <Route path='cortinavarao' element={<CortinaVarao />} />
