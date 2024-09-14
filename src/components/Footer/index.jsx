@@ -2,6 +2,7 @@ import React from 'react'
 import { ContainerFooter } from './styles'
 import { FaInstagram } from "react-icons/fa"
 import { FaFacebook } from "react-icons/fa"
+import { Link } from 'react-router-dom';
 
 
 
@@ -24,7 +25,9 @@ const Footer = () => {
 <a target='blank' href="https://www.facebook.com/ismaeldeccor">
   <FaFacebook className='face-icon' size={'19px'}/></a>
 
-  <a target='blank' href="politicas">Políticas de Privacidade</a>
+  <Link to="/politicas">
+            <li>Políticas de Privacidade</li>
+          </Link>
 </div>
 
 </div>
