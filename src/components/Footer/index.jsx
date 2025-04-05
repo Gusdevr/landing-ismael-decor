@@ -33,7 +33,7 @@ const Footer = () => {
 </div>
 
 <div className='sec-copy'>
-Ismael Decor &copy; <strong>Direitos Reservados</strong>
+Ismael Deccor &copy; <strong>Direitos Reservados</strong>
 
 </div>
 
